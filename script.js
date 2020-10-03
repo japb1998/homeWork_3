@@ -19,7 +19,7 @@ function writePassword() {
     var criteria_4 = confirm('Symbols ?');
 
     function test() {
-      if (parseInt(criteria_5) < 8 || parseInt(criteria_5) > 128) {
+      if (parseInt(criteria_5) < 8 || parseInt(criteria_5) > 128 || !criteria_5) {
 
         criteria_5 = prompt('it need to be 8-128');
         test();
