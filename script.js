@@ -10,7 +10,9 @@ function writePassword() {
 
 
   function generatePassword() {
+    
     var criteria_5 = prompt('how long do you want it to be ?  from 8 to 128');
+    test();
     var criteria_1 = confirm('UpperCase ?');
     var criteria_2 = confirm('LowerCase ?');
     var criteria_3 = confirm('Numbers ?');
@@ -23,7 +25,7 @@ function writePassword() {
         test();
       }
     };
-    test();
+   
     var passwordArray = [];
     // loop as many time as the user says with the criteria 5 value
     for (var i = 0; i < parseInt(criteria_5); i++) {
